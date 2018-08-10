@@ -27,3 +27,10 @@ print('-'*30)
 print('세번째 방법')
 print('파이썬\n'*3)
 
+import time
+import sys
+for i in range(1,6):
+    sys.stdout.write('\r\a{i}'.format(i=i))
+    sys.stdout.flush()
+    time.sleep(1)
+sys.stdout.write('\n')

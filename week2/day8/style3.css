@@ -1,0 +1,19 @@
+#main{
+    width:590px;
+    height: 464px;
+    margin:20px 10px 0px 10px;
+    border-bottom: 1px solid #c0c3c6;
+    background: yellow;
+}
+#header{
+    padding: 21px 0 0 25px; 
+}
+#left>div:first-child{
+    
+}
+#left>div:nth-child(2){
+    
+}
+#left>div:nth-child(3){
+    
+}

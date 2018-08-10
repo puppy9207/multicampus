@@ -1,0 +1,66 @@
+#menuBox1 {
+    text-align: center;
+}
+#menuBox1 li{
+    display: inline;
+    padding: 0 15px;
+}
+#menuBox1 li a:link,
+#menuBox1 li a:visited
+{
+    color: black;
+    text-decoration: none;
+}
+#menuBox1 li a:hover,
+#menuBox1 li a:active
+{
+    color: cornflowerblue;
+    text-decoration: underline;
+}
+    
+.boldStyle a{
+    font-weight: bold
+}
+#gallaryBox img{
+    display: block;
+    border: 1px dashed hotpink;
+    border-radius: 10px;
+    padding: 10px 10px 0px;
+    margin-bottom: 10px;
+}
+.h3Hide{
+    display: none
+}
+
+#popup1{
+    background: gray;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 100px;
+    top:100px;
+    z-index: 2;
+}
+#popup2{
+    background: #e057ee;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 110px;
+    top:120px;
+    z-index: 1;
+}
+
+#topBox{
+    background: #88ee33;
+    width: 100px;
+    position: fixed;
+    bottom: 100px;
+    right: 120px;
+}
+
+#bottomBox{
+    position: fixed;
+    bottom: 100px;
+    right: 60px;
+}

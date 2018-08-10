@@ -1,0 +1,119 @@
+/*box1 안의 모든 div*/
+#first div{
+    background: #efefef;
+    border: 1px solid;    
+}
+/*직계 선택자
+box1 아이디 2단계 밑에있는 div
+*/
+#first>div>div{
+    color: aqua
+}
+
+#box2{
+    width: 600px;
+    height: 400px;
+    background: #0000e0;
+    margin: 0 auto;
+}
+#box2 div{
+    width: 200px;
+    height: 200px;
+    background: green;
+    border: 1px dotted black;
+}
+#box2 div:first-child {
+    float: left
+}
+#box2 div:nth-child(2){
+    float: right
+}
+#box2 div:nth-child(3){
+    clear: both
+}
+
+#box3{
+    width: 900px;
+    height: 300px
+}
+#box3 div:first-child{
+    border: 1px solid black;
+    background: lightcoral;
+    height: 100px;
+}
+#box3 div:nth-child(2){
+    border: 1px solid black;
+    float: left; 
+    height: 100px;
+    width: 45%;
+}
+#box3 div:nth-child(3){
+    border: 1px solid black;
+    float: right;
+    height: 100px;
+    width: 45%;
+}
+#box3 div:nth-child(4){
+    border: 1px solid black;
+    width: 100%;
+    height: 100px;
+}
+
+#box4{
+    width: 700px;
+    margin: 10px auto;
+    clear: both;
+}
+#box4 div:first-child{
+    background: #505005;
+    height: 150px;
+    margin-bottom: 3px;
+}
+#box4 div:nth-child(2){
+    background: #50ee05;
+    height: 250px;
+    float: left;
+    width:65%;
+    margin-bottom: 3px;
+}
+#box4 div:nth-child(3){
+    background: #505ff5;
+    height: 250px;
+    float: right;
+    width:33%;
+    margin-bottom: 3px;
+}
+#box4 div:nth-child(4){
+    background: #e05ff5;
+    height: 350px;
+    clear: both;
+}
+#box4 div:nth-child(5){
+    background: #e00005;
+    margin-top: 10px;
+    height:100px;
+}
+#box5{
+    width: 800px;
+    margin: 10px auto;
+}
+#box5 div{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#box5 div:first-child{
+    background: #e5e5e5;
+    height: 100px;
+}
+#box5 div:nth-child(2),
+#box5 div:nth-child(3),
+#box5 div:nth-child(4){
+    height: 500px;
+    background: #5e3fe5
+}
+
+
+
+
+
+

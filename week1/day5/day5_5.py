@@ -85,3 +85,6 @@ def list_in(v):
 
 list_in(in_v)
 print(result_list)
+
+h = 'hellopythonworld'
+print(h[5:11])
