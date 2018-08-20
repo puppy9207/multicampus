@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>if_else_html</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<h1>main</h1>
+{% for key,value in doc.items() %}
+<table class = 'table_style'>
+    <tr>
+        <th>{{ key }}</th>
+        <td>{{ value }}</td>
+    </tr>
+</table>
+{% endfor %}
+
+<a href="/grade">여기로</a>
+</body>
+</html>

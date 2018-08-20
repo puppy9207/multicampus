@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #tablestyle{
+            width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        #tablestyle tr th{
+            background: cadetblue;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        #tablestyle tr td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<h1>새로운 페이지입니다</h1>
+<hr>
+<table id="tablestyle">
+    <tr>
+        <th>Title</th>
+        <th>Lastname</th>
+        <th>Firstname</th>
+        <th>Country</th>
+        <th>City</th>
+    </tr>
+    {% for i in emp %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+        <td>{{ i[2] }}</td>
+        <td>{{ i[3] }}</td>
+        <td>{{ i[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<ul>
+    <li><a href="/albums">Album</a></li>
+    <li><a href="/person">person</a></li>
+</ul>
+
+</body>
+</html>

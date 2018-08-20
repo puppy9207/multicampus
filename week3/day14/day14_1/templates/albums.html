@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #tablestyle{
+            width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        #tablestyle tr th{
+            background: cadetblue;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        #tablestyle tr td{
+            padding: 5px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table id="tablestyle">
+    <tr>
+        <th>Albumid</th>
+        <th>Name</th>
+        <th>Composer</th>
+        <th>Bytes</th>
+    </tr>
+    {% for i in albums %}
+    <tr>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+        <td>{{ i[2] }}</td>
+        <td>{{ i[3] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

@@ -78,7 +78,7 @@ def insertTable():
         if check_book(checkList):
             commit = input('DB에 넣으시겠습니까? y를 누르면 들어갑니다\n')
             if commit == 'y' or commit == 'Y':
-                sql = 'insert into books(title, published_date,publisher,pages,recommended) values(?,?,?,?,?)'
+                sql = 'insert into books(title,published_date,publisher,pages,recommended) values(?,?,?,?,?)'
                 cursor.execute(sql, checkList)
                 conn.commit()
             else:
